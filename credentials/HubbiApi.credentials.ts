@@ -19,6 +19,14 @@ export class HubbiApi implements ICredentialType {
 			required: true,
 			description: "Your Hubbi API Key",
 		},
+		{
+			displayName: "Hubbi API URL",
+			name: "apiUrl",
+			type: "string",
+			default: "http://hubbi.app",
+			required: true,
+			description: "The base URL for the Hubbi API. Default is http://hubbi.app",
+		},
 	];
 	authenticate: IAuthenticateGeneric = {
 		type: "generic",
@@ -30,7 +38,7 @@ export class HubbiApi implements ICredentialType {
 	};
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: "http://127.0.0.1:8000/",
+			baseURL: "={{$credentials.apiUrl}}",
 			url: "/authentication/api-keys/",
 			headers: {
 				Accept: "application/json",

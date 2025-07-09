@@ -25,7 +25,7 @@ export class Hubbi implements INodeType {
 			},
 		],
 		requestDefaults: {
-			baseURL: "http://127.0.0.1:8000/",
+			baseURL: "={{$credentials.apiUrl}}",
 			headers: {
 				Accept: "application/json",
 				"Content-Type": "application/json",
