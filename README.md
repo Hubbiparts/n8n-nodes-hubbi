@@ -8,7 +8,7 @@ Hubbi is a B2B marketplace platform that connects corporate consumers with auto 
 
 [Installation](#installation)  
 [Operations](#operations)  
-[Credentials](#credentials)
+[Credentials](#credentials)  
 [Compatibility](#compatibility)  
 [Resources](#resources)
 
