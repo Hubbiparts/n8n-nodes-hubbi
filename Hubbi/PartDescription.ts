@@ -77,6 +77,27 @@ export const partFields: INodeProperties[] = [
 		},
 	},
 	{
+		displayName: "Position",
+		name: "position",
+		type: "multiOptions",
+		required: false,
+		default: [],
+		options: [
+			{ name: "Front", value: "DIANTEIRO" },
+			{ name: "Rear", value: "TRASEIRO" },
+			{ name: "Left", value: "LADO ESQUERDO" },
+			{ name: "Right", value: "LADO DIREITO" },
+			{ name: "Upper", value: "SUPERIOR" },
+			{ name: "Lower", value: "INFERIOR" },
+		],
+		displayOptions: {
+			show: {
+				operation: ["searchPart"],
+				advancedSearch: [true],
+			},
+		},
+	},
+	{
 		displayName: "Only in stock",
 		name: "inStock",
 		type: "boolean",
@@ -132,40 +153,6 @@ export const partFields: INodeProperties[] = [
 			},
 		},
 	},
-	{
-		displayName: "Only with image",
-		name: "hasImage",
-		type: "boolean",
-		required: false,
-		default: false,
-		displayOptions: {
-			show: {
-				operation: ["searchPart"],
-				advancedSearch: [true],
-			},
-		},
-	},
-	{
-		displayName: "Position",
-		name: "position",
-		type: "multiOptions",
-		required: false,
-		default: [],
-		options: [
-			{ name: "Front", value: "DIANTEIRO" },
-			{ name: "Rear", value: "TRASEIRO" },
-			{ name: "Left", value: "LADO ESQUERDO" },
-			{ name: "Right", value: "LADO DIREITO" },
-			{ name: "Upper", value: "SUPERIOR" },
-			{ name: "Lower", value: "INFERIOR" },
-		],
-		displayOptions: {
-			show: {
-				operation: ["searchPart"],
-				advancedSearch: [true],
-			},
-		},
-	},
 ];
 
 const basePartOptions: Array<INodePropertyOptions | INodeProperties | INodePropertyCollection> = [
@@ -190,7 +177,6 @@ const basePartOptions: Array<INodePropertyOptions | INodeProperties | INodePrope
 					positions:
 						'={{Array.isArray($parameter["position"]) ? $parameter["position"].join(",") : $parameter["position"]}}',
 					stock: '={{$parameter["inStock"] ? "true" : "false"}}',
-					asset: '={{$parameter["hasImage"] ? "true" : "false"}}',
 				},
 			},
 			output: {
