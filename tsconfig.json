@@ -23,8 +23,8 @@
 	},
 	"include": [
 		"credentials/**/*",
-		"Hubbi/**/*",
-		"Hubbi/**/*.json",
+		"nodes/Hubbi/**/*",
+		"nodes/Hubbi/**/*.json",
 		"package.json",
 	],
 }

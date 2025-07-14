@@ -4,8 +4,8 @@ const { task, src, dest } = require('gulp');
 task('build:icons', copyIcons);
 
 function copyIcons() {
-	const nodeSource = path.resolve('Hubbi', '**', '*.{png,svg}');
-	const nodeDestination = path.resolve('dist', 'Hubbi');
+	const nodeSource = path.resolve('nodes', 'Hubbi', '**', '*.{png,svg}');
+	const nodeDestination = path.resolve('dist', 'nodes', 'Hubbi');
 
 	src(nodeSource).pipe(dest(nodeDestination));
 
