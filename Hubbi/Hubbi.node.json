@@ -6,12 +6,12 @@
     "resources": {
         "credentialDocumentation": [
             {
-                "url": ""
+                "url": "https://gitlab.com/hubbin8n/n8n-nodes-hubbi/-/wikis/credential-docs"
             }
         ],
         "primaryDocumentation": [
             {
-                "url": ""
+                "url": "https://gitlab.com/hubbin8n/n8n-nodes-hubbi/-/wikis/nodes-docs"
             }
         ]
     }
