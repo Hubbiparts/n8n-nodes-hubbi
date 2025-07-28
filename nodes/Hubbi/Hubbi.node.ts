@@ -8,7 +8,8 @@ export class Hubbi implements INodeType {
 		displayName: "Hubbi",
 		name: "hubbi",
 		icon: "file:hubbi.svg",
-		documentationUrl: "https://gitlab.com/hubbin8n/n8n-nodes-hubbi/-/wikis/nodes-docs",
+		documentationUrl:
+			"https://github.com/Hubbiparts/n8n-nodes-hubbi/wiki/Hubbi-n8n-node-Documentation",
 		group: ["transform"],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',

@@ -8,7 +8,8 @@ import {
 export class HubbiApi implements ICredentialType {
 	displayName = "Hubbi Token API";
 	name = "hubbiApi";
-	documentationUrl = "https://gitlab.com/hubbin8n/n8n-nodes-hubbi/-/wikis/credential-docs";
+	documentationUrl =
+		"https://github.com/Hubbiparts/n8n-nodes-hubbi/wiki/Hubbi-n8n-node-Credentials-Documentation";
 	properties: INodeProperties[] = [
 		{
 			displayName: "Hubbi API Key",

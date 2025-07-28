@@ -6,14 +6,14 @@
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "https://gitlab.com/hubbin8n/n8n-nodes-hubbi/-/wikis/home",
+  "homepage": "https://github.com/Hubbiparts/n8n-nodes-hubbi/wiki",
   "author": {
     "name": "Hubbi",
     "email": "contato@hubbi.app"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/hubbin8n/n8n-nodes-hubbi"
+    "url": "git+https://github.com/Hubbiparts/n8n-nodes-hubbi.git"
   },
   "engines": {
     "node": ">=20.15"
