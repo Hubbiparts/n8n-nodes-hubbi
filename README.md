@@ -44,4 +44,4 @@ This node is compatible with n8n version 1.93.0 and onwards.
 ## Resources
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-- [Hubbi] (https://hubbi.app)
+- [Hubbi](https://hubbi.app)
